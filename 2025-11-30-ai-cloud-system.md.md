@@ -1,11 +1,4 @@
 ---
-title: 블로그 발행 테스트 (Hello World)
-date: 2025-11-30 09:00:00 +0900
-categories: [Test, Demo]
-tags: [github, obsidian, chirpy]
----
-
----
 title: AI/Cloud 엔지니어를 위한 완벽한 역량 관리 시스템 (Notion + Obsidian + AI)
 date: 2025-11-30 09:00:00 +0900
 categories: [Productivity, System]
