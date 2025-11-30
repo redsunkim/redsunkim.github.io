@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-11-30-hello-world.md",
+                "file": "_tabs/about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-30-hello-world"
+              "title": "about"
             }
           }
         ]
@@ -186,9 +186,9 @@
   },
   "active": "95c62a0852104b45",
   "lastOpenFiles": [
+    "_posts/2025-11-30-hello-world.md",
     "_tabs/about.md",
     "Templates/Blog Post Template.md",
-    "_posts/2025-11-30-hello-world.md",
     "Templates",
     "개개비",
     "README.md",
