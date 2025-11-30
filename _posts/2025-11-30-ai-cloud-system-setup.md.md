@@ -1,8 +1,16 @@
 ---
 title: AI/Cloud 엔지니어를 위한 완벽한 역량 관리 시스템 구축기 (Notion + Obsidian + AI)
-date: 2025-11-30 14:30:00 +0900
-categories: [Productivity, System]
-tags: [notion, obsidian, github, gemini, chatgpt, fastcampus]
+date: 2025-11-30 09:00:00 +0900
+categories:
+  - Productivity
+  - System
+tags:
+  - notion
+  - obsidian
+  - github
+  - gemini
+  - chatgpt
+  - fastcampus
 image:
   path: ../assets/img/system-architecture.png
   alt: 역량 관리 시스템 아키텍처 다이어그램
