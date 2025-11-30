@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-11-30-ai-cloud-system-setup.md.md",
+                "file": "_posts/2025-11-30-test-post.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-30-ai-cloud-system-setup.md"
+              "title": "2025-11-30-test-post.md"
             }
           }
         ]
@@ -187,9 +187,10 @@
   },
   "active": "95c62a0852104b45",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-11-30 14.18.21.excalidraw.md",
-    "_posts/2025-11-30-ai-cloud-system-setup.md.md",
     "_tabs/about.md",
+    "_posts/2025-11-30-test-post.md.md",
+    "_tabs/2025-11-30-ai-cloud-system-setup.md.md",
+    "Excalidraw/Drawing 2025-11-30 14.18.21.excalidraw.md",
     "Excalidraw",
     "_posts/2025-11-30-hello-world.md",
     "Templates/Blog Post Template.md",
