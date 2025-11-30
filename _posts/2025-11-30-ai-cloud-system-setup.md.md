@@ -1,0 +1,96 @@
+---
+title: AI/Cloud 엔지니어를 위한 완벽한 역량 관리 시스템 구축기 (Notion + Obsidian + AI)
+date: 2025-11-30 14:30:00 +0900
+categories: [Productivity, System]
+tags: [notion, obsidian, github, gemini, chatgpt, fastcampus]
+image:
+  path: ../assets/img/system-architecture.png
+  alt: 역량 관리 시스템 아키텍처 다이어그램
+---
+
+Fastcampus 강의, 쏟아지는 기술 문서, 그리고 매일 업데이트되는 AWS/Cloud 신기술들.
+단순히 열심히 공부하는 것만으로는 부족함을 느꼈습니다. **"배운 것을 내 것으로 만들고, 이를 증명(포트폴리오)하는 시스템"**이 필요했죠.
+
+수많은 시행착오 끝에 정착한, **Google Workspace 기반의 하이브리드 지식 관리 시스템(The Hybrid Knowledge System)**을 소개합니다.
+
+## 🏗️ 시스템 설계 철학: 왜 이렇게 구성했는가?
+
+이 시스템은 각 도구의 장점만을 극대화하여 **[입력 → 관리 → 가공 → 출력]**의 파이프라인을 구축하는 것을 목표로 합니다.
+
+![System Architecture](../assets/img/system-architecture.png)
+*(Obsidian Excalidraw로 그린 시스템 구성도)*
+
+### 🛠️ 도구별 역할 정의 (Role & Responsibility)
+
+| 도구 (Tool) | 역할 (Persona) | 핵심 기능 |
+| :--- | :--- | :--- |
+| **🏠 Notion** | **사령관 (HQ)** | 전체 학습 진도 관리, 일정(Calendar), 대시보드 |
+| **🧠 Obsidian** | **연구소 (Lab)** | 지식 심화 정리(제텔카스텐), 블로그 원고 작성, GitHub 연동 |
+| **☁️ Google WS** | **창고 (Storage)** | 대용량 PDF, 영상, 실습 파일 저장 (Notion 용량 한계 극복) |
+| **🤖 ChatGPT** | **개인 튜터** | 코딩 로직 디버깅, 개념 설명, 글쓰기 윤문(Tone & Manner) |
+| **💎 Gemini** | **비서 & 리서처** | 구글 문서/유튜브 요약, 최신 기술 트렌드 검색, 팩트 체크 |
+| **🐙 GitHub** | **전시장 (Blog)** | 버전 관리 및 기술 블로그(GitHub Pages) 자동 배포 |
+
+---
+
+## 🚀 워크플로우: 학습에서 블로그 발행까지
+
+Fastcampus에서 'Kubernetes' 강의를 듣는다고 가정했을 때, 데이터는 다음과 같이 흐릅니다.
+
+### Step 1. 입력 (Input): Fastcampus & Google Drive
+강의를 들으며 발생하는 모든 '무거운' 자료는 **Google Drive**로 보냅니다.
+- **강의 자료(PDF):** `Google Drive/Learning/Fastcampus_K8s` 폴더에 저장.
+- **실습 코드:** 로컬에서 작업 후 GitHub에 Push하거나 Drive에 백업.
+- **Notion 기록:** Notion의 `Learning Tracker` DB에 강의 진행률을 체크하고, `/drive` 명령어로 교안 PDF를 임베드하여 바로 열람합니다.
+
+### Step 2. 가공 (Processing): Obsidian & AI
+지식을 내 것으로 만드는 가장 중요한 단계입니다.
+1.  **Obsidian 메모:** 강의 중 핵심 키워드(`[[Pod Lifecycle]]`)를 링크로 걸며 메모합니다.
+2.  **AI 활용 (The Dual Engine):**
+    - 이해가 안 가는 개념은 **ChatGPT**에게 *"비유를 들어 설명해줘"*라고 묻습니다.
+    - 최신 사례가 필요하면 **Gemini**에게 *"실무 적용 사례를 찾아줘"*라고 시킵니다.
+3.  **지식 연결:** 파편화된 메모들을 모아 하나의 완결된 '개념 노트'로 정리합니다.
+
+### Step 3. 관리 (Management): Notion Dashboard
+공부에만 매몰되지 않도록 숲을 봅니다.
+- **진척도 관리:** Notion 대시보드에서 이번 주 목표 달성률을 확인합니다.
+- **파이프라인:** 공부한 내용 중 블로그로 쓸 주제를 선정하여 `Content Pipeline` DB에 '작성 중' 상태로 올립니다.
+
+### Step 4. 출력 (Output): GitHub Blog (Chirpy)
+학습의 결과물은 결국 '글'과 '코드'로 남아야 합니다.
+1.  **원고 작성:** Obsidian의 `_posts` 폴더에서 Markdown으로 글을 씁니다.
+2.  **Excalidraw:** 아키텍처 다이어그램을 그려서 바로 본문에 넣습니다 (`.png` 자동 변환).
+3.  **자동 배포:** `Ctrl + P` → `Git: Create backup`을 실행하면, 5분 뒤 내 **GitHub 블로그(redsunkim.github.io)**에 자동으로 포스팅됩니다.
+
+---
+
+## 💡 핵심 꿀팁 (Technical Tips)
+
+이 시스템을 구축하며 얻은 노하우를 공유합니다.
+
+### 1. Notion과 Google Drive의 공생
+Notion 무료 버전은 5MB 업로드 제한이 있습니다. 파일을 직접 올리지 마세요.
+> **Tip:** 모든 파일은 Drive에 올리고, Notion에서는 `/drive` 명령어로 불러오세요. 용량은 무제한, 관리는 Notion에서!
+
+### 2. Obsidian Git 자동화
+블로그 글을 쓰고 매번 터미널을 열어 `git push`를 하는 건 귀찮습니다.
+> **Tip:** **Obsidian Git** 플러그인을 설치하고 `Backup interval`을 5분으로 설정하세요. 글을 쓰고 커피 한 잔 마시고 오면 배포가 끝나 있습니다.
+
+### 3. Excalidraw 활용
+클라우드 엔지니어에게 다이어그램은 필수입니다.
+> **Tip:** Obsidian에 **Excalidraw** 플러그인을 설치하고, `Auto-export PNG` 설정을 켜세요. 내가 그린 아키텍처가 실시간으로 이미지 파일로 변환되어 블로그에 올라갑니다.
+
+---
+
+## 🎯 마치며: 시스템이 주는 안정감
+
+이 시스템의 가장 큰 장점은 **"도구의 늪에 빠지지 않게 해준다"**는 것입니다.
+- 자료는 구글 드라이브에 있고,
+- 현황은 노션에 있으며,
+- 지식은 옵시디언에 쌓이고,
+- 결과물은 깃허브에 남습니다.
+
+이제 저는 시스템 구축에 대한 고민을 끝내고, 온전히 **역량 강화(Learning)**에만 집중할 수 있게 되었습니다. 
+AI/Cloud 엔지니어를 꿈꾸는 여러분도 자신만의 '제2의 뇌'를 구축해 보시길 강력히 추천합니다.
+
+---
