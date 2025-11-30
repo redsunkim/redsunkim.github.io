@@ -14,9 +14,6 @@ Fastcampus 강의, 쏟아지는 기술 문서, 그리고 매일 업데이트되�
 
 이 시스템은 각 도구의 장점만을 극대화하여 **[입력 → 관리 → 가공 → 출력]**의 파이프라인을 구축하는 것을 목표로 합니다.
 
-![System Architecture](../assets/img/system-architecture.png)
-*(Obsidian Excalidraw로 그린 시스템 구성도)*
-
 ### 🛠️ 도구별 역할 정의 (Role & Responsibility)
 
 | 도구 (Tool) | 역할 (Persona) | 핵심 기능 |
