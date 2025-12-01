@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-11-30-ai-cloud-system.md.md",
+                "file": "_posts/2025-12-01-datadog-ito-proposal.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-30-ai-cloud-system.md"
+              "title": "2025-12-01-datadog-ito-proposal.md"
             }
           }
         ]
@@ -185,9 +185,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a6d84b41415dc9bc",
+  "active": "95c62a0852104b45",
   "lastOpenFiles": [
     "_posts/2025-11-30-ai-cloud-system.md.md",
+    "_posts/2025-12-01-datadog-ito-proposal.md.md",
+    "_posts/2025-12-01-PPT 생성 자동화.md",
     "_posts/2025-11-30-test-post.md.md",
     "_tabs/about.md",
     "_tabs/2025-11-30-ai-cloud-system-setup.md.md",
