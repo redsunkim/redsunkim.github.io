@@ -4,5 +4,5 @@ icon: fas fa-info-circle
 order: 4
 ---
 redsun kim의 Tech Blog입니다.
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Global CSP, AI에 관심이 있고 관련한 내역들을 포스팅하고자 합니다.
+
